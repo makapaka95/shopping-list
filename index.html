@@ -19,6 +19,9 @@
       <header>
         <img src="images/note.png" alt="" />
         <h1>Shopping List</h1>
+        <button id="dark-mode-toggle" class="dark-mode-toggle">
+          <svg width="100%" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 496"><path fill="currentColor" d="M8,256C8,393,119,504,256,504S504,393,504,256,393,8,256,8,8,119,8,256ZM256,440V72a184,184,0,0,1,0,368Z" transform="translate(-8 -8)"/></svg>
+        </button>
       </header>
       <form id="item-form">
         <div class="form-control">
@@ -30,17 +33,7 @@
             name="item"
             placeholder="Enter Item"
           />
-        </div>
-        <!-- Select Input -->
-        <select id="priority-input" name="priority" class="form-input">
-          <option value="0">Select Priority</option>
-          <option value="1">1</option>
-          <option value="2">2</option>
-          <option value="3">3</option>
-        </select>
-        <!-- Checkbox Input -->
-
-        <input type="checkbox" id="checkbox" /> Recurring Item
+      
 
         <div class="form-control">
           <button type="submit" class="btn">
@@ -59,58 +52,14 @@
       </div>
 
       <ul id="item-list" class="items">
-<!--         <li>
-          Apples
-          <button class="remove-item btn-link text-red">
-            <i class="fa-solid fa-xmark"></i>
-          </button>
-        </li>
-        <li>
-          Orange Juice
-          <button class="remove-item btn-link text-red">
-            <i class="fa-solid fa-xmark"></i>
-          </button>
-        </li>
-        <li>
-          Oreos
-          <button class="remove-item btn-link text-red">
-            <i class="fa-solid fa-xmark"></i>
-          </button>
-        </li>
-        <li>
-          Milk
-          <button class="remove-item btn-link text-red">
-            <i class="fa-solid fa-xmark"></i>
-          </button>
-        </li> -->
+
       </ul>
 
       <button id="clear" class="btn-clear">Clear All</button>
     </div>
 
     <script src="script.js"></script>
+    <script src="darkmode.js"></script>
   </body>
 </html>
 
-<!-- <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
-    <title>Traversing The DOM</title>
-  </head>
-  <body>
-    <div class="container">
-      <h1>Traversing The DOM</h1>
-      <div class="parent">
-        <div class="child">Child 1</div>
-        <div class="child">Child 2</div>
-        <div class="child">Child 3</div>
-      </div>
-    </div>
-
-    <script src="script.js"></script>
-  </body>
-</html> -->
