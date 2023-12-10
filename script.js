@@ -20,7 +20,7 @@ function onAddItemSubmit (e) {
     const newItem = itemInput.value;
 
     //Basic Validation
-    if(itemInput.value === '') {
+    if(newItem === '') {
         alert('Please enter item')
         return;
     }
